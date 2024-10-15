@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" href="../favicons/favicon-16x16.png">
+        <link rel="Stylesheet" href="../css/style.css">
+
+        <script defer src="../js/script.js"></script>
+
+        <title>Pokedex</title>
+    </head>
+    <body>
+        <main>
+            <img src="" alt="pokemon" class="pokemon_image">
+            
+              <!-- Container for displaying Pokémon types -->
+            <div class="poke_types">
+            </div>
+            
+              <!-- Display the Pokémon number and name -->
+            <h1 class="pokemon_data">
+                <span class="pokemon_number">pokeID</span> -
+                <span class="pokemon_name">Pokemon Name</span>
+            </h1>
+
+            <!-- Search form for Pokémon name or number -->
+            <form class="form">
+                <input 
+                type="search"
+                class="input_search"
+                placeholder="Name or Number"
+                required>
+            </form>
+
+            <!-- Navigation buttons for previous and next Pokémon -->
+            <div class="buttons_navigation">
+                <button class="button btn_return">&#8592 Previous</button>
+                <button class="button btn_next">Next &#8594</button>
+            </div>
+
+            <!-- Checkbox to toggle shiny Pokémon -->
+            <input class="shiny_switch" type="checkbox"/>
+
+            <!-- Pokedex Background Image-->
+            <img src="../images/pokedex.png" alt="pokedex" class="pokedex">
+        </main>
+    </body>
+</html>

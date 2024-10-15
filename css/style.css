@@ -1,0 +1,152 @@
+/*Importing The Oxanium font from Google Fonts for general use on this pokedex*/
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&display=swap');
+
+
+
+/*Set up for the font to be used globally, and reseting paddings and margins on all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+
+/*Here i set the background colors and height of the main viewport as well as centering the pokedex image on screen */
+body{
+    text-align: center;
+    background: linear-gradient(to bottom, #6ab7f5, #fff);
+    min-height: 100vh;
+}
+
+/* Display the main content as an inline-block element, and position it relative for absolute positioning of children */
+main {
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+}
+
+/*Adjust the pokedex image to fit and adjust different window sizes*/
+.pokedex {
+    width: 100%;
+    max-width: 425px;
+}
+
+/* Position the Pokémon image absolutely, center it horizontally with transform, and adjust its height */
+.pokemon_image {
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-63%, 20%);
+    height: 11%;
+}
+
+/* Adjust the div where the pokemon types container will be positioned later */
+.poke_types{
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    width: 30%;
+    transform: translate(-30%, 70%);
+    display: flex;
+    height: 4.5%;
+}
+
+/*Set the size of the type container and add some padding between them*/
+.pokemon_type{
+    padding: 4px;
+    width: 50%;
+
+}
+
+/* Position the Pokémon ID, use clamp to adjust font size responsively */
+.pokemon_data {
+    position: absolute;
+    font-weight: 700;
+    color: #818181;
+    top: 54.5%;
+    right: 27%;
+    font-size: clamp(8px, 4vw, 20px);
+}
+
+/* Style Pokémon name with custom color and capitalize the first letter of each word */
+.pokemon_name {
+    color: #3a444d;
+    text-transform: capitalize;
+    font-size: clamp(8px, 4vw, 20px);
+
+}
+
+/* Position the search form, setting its width and location */
+.form {
+    position: absolute;
+    width: 65%;
+    top: 65%;
+    left: 13.5%;
+}
+
+/* Configure the search input setting its width and location, also set up an elevation effect using shadows */
+.input_search{
+    width: 100%;
+    padding: 4%;
+    outline: none;
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+    text-align: center;
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -3px 4px 0 #888, -5px 7px 0 #333;
+}
+
+/* Adjustments for the buttons div where they are located*/
+.buttons_navigation {
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-55%, 0);
+    display: flex;
+    gap: 20px;
+}
+
+/* Settings for the action buttons to search throught the pokedex, also using an elevation effect with shadow*/
+.button {
+    width: 50%;
+    padding: 4%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 1rem);
+    font-weight: 600;
+    color: white;
+    background-color: #444;
+    box-shadow: -2px 3px #222, -4px 6px #000;
+}
+
+/* Adjust the shadow for when the button is pressed*/
+.button:active {
+ box-shadow: inset -4px 4px 0 #222;
+ font-size: 0.9rem;
+}
+
+/*  Adjust the button that alternates between the normal and shiny versions
+    and add an active state for button to simulate a "pressed" effect, 
+    with an inset shadow and slight font reduction */
+.shiny_switch{
+    appearance: none;
+    position: absolute;
+    border: 2px solid #222;
+    border-radius: 70px;
+    top: 3.1%;
+    left: 10%;
+    height: 13.5%;
+    width: 19.5%;
+    min-height: 40px;
+    min-width: 40px;
+    transform: translate(0, 0);
+    box-shadow: -2.1px 2px #222, -5px 4px #000;
+    background-color: #aaa;
+}
+.shiny_switch:checked{
+    box-shadow: inset -2px 2px #222;
+}
