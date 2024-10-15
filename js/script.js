@@ -116,7 +116,7 @@ const renderPokemon = async (pokemon) => {
     else {
         pokemonName.innerHTML = 'Not Found'
         pokemonNumber.innerHTML = '???'
-        pokemonImage.src = "../images/notfound.png"
+        pokemonImage.src = "images/notfound.png"
     }
 }
 
