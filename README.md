@@ -12,3 +12,5 @@ A simple and interactive Pokedex web application that allows users to search for
 - CSS3
 - JavaScript 
 - PokéAPI
+
+Preview the live Web App [here](https://coldhabour.github.io/pokedex-web/)
