@@ -81,6 +81,9 @@ const showType = async (pokeinfo) => {
             case 'dark':
                 type.src = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-v/black-white/17.png";
                     break;
+            case 'fairy':
+                type.src ="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/types/generation-vi/omega-ruby-alpha-sapphire/18.png"
+                break
         }
         //here is handled the creation of the img block on the html for the type image be put on
         type.alt = typeInfo.type.name;
